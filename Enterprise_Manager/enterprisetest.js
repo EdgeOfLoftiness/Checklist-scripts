@@ -12,10 +12,10 @@ const linksToVisit = [
     { name: 'BD_BDFPEBS', url: 'https://consola-oem.sb.cl:7803/em/faces/db-homepage-ashViewer?type=oracle_database&target=PRDSB12_bdfpebs.domc001.cl' },
 ];
 
-const username = 'MONDB';
-const password = 'oracle321';
-const secondUsername = 'dbsnmp';
-const secondPassword = 'Oracle123';
+const username = '';
+const password = '';
+const secondUsername = '';
+const secondPassword = '';
 
 async function ensureDirectoryExists(directory) {
     try {
