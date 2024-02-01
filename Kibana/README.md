@@ -5,7 +5,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
-- [Contribution](#contribution)
 
 ## Installation
 
@@ -61,7 +60,3 @@
     ```
 
 ## Contribution
-
-Feel free to fork the repository, open issues, or submit pull requests for any improvements or additional features.
-
-**Happy Screenshotting!**
