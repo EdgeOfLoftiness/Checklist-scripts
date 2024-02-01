@@ -1,7 +1,5 @@
 # Puppeteer Screenshot Automation
 
-![Screenshot](screenshot.png)
-
 ## Table of Contents
 
 - [Installation](#installation)
