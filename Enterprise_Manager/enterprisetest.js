@@ -4,12 +4,12 @@ const fs = require('fs').promises;
 const os = require('os');
 
 const linksToVisit = [
-    { name: 'BD_PRODSBF', url: 'https://consola-oem.sb.cl:7803/em/faces/db-homepage-ashViewer?type=rac_database&target=PRODSBF_p-sbf-s1' },
-    { name: 'BD_PRODERP', url: 'https://consola-oem.sb.cl:7803/em/faces/db-homepage-ashViewer?type=rac_database&target=PRODERP_p-erp-st1&target=PRODERP_p-erp-st1&type=rac_database' },
-    { name: 'BD_PRODSYB', url: 'https://consolaoem.sb.cl/em/faces/db-homepage-ashViewer?type=rac_database&target=PRODSYB_p-syb-st1' },
-    { name: 'BD_MDSOA', url: 'https://consola-oem.sb.cl:7803/em/faces/db-homepage-ashViewer?type=oracle_database&target=MDSOA_sbpdbsoa12c2-c.sb.cl&target=MDSOA_sbpdbsoa12c2-c.sb.cl&type=oracle_database' },
-    { name: 'BD_PRDSOA12C', url: 'https://consola-oem.sb.cl:7803/em/faces/db-homepage-ashViewer?type=oracle_database&target=PRDSOA12C_sbpdbsoa12c-c.sb.cl&target=PRDSOA12C_sbpdbsoa12c-c.sb.cl&type=oracle_database' },
-    { name: 'BD_BDFPEBS', url: 'https://consola-oem.sb.cl:7803/em/faces/db-homepage-ashViewer?type=oracle_database&target=PRDSB12_bdfpebs.domc001.cl' },
+    { name: '', url: '' },
+    { name: '', url: '' },
+    { name: '', url: '' },
+    { name: '', url: '' },
+    { name: '', url: '' },
+    { name: '', url: '' },
 ];
 
 const username = '';
