@@ -1,10 +1,17 @@
 # Puppeteer Screenshot Automation
 
+![Screenshot](screenshot.png)
+
 ## Table of Contents
 
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
+
+## Prerequisites
+
+- **Node.js**: Ensure you have Node.js installed on your machine. You can download it from [here](https://nodejs.org/).
 
 ## Installation
 
