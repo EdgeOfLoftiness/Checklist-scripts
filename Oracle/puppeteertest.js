@@ -4,11 +4,11 @@ const fs = require('fs').promises;
 const os = require('os');
 
 const linksToVisit = [
-    { name: 'Report_12', url: 'http://172.18.0.7:7001/console/console.portal?_nfpb=true&_pageLabel=CoreServerServerTablePage' },
-    { name: 'SOA_12.1', url: 'http://sbpsoa12c.sb.cl:8001/console/console.portal?_nfpb=true&_pageLabel=CoreServerServerTablePage' },
-    { name: 'SOA_12.2', url: 'http://sbpsoa-admin.sb.cl:8001/console/console.portal?_nfpb=true&_pageLabel=CoreServerServerTablePage' },
-    { name: 'BUS_12.1', url: 'http://sbpsoa12c.sb.cl:7001/console/console.portal?_nfpb=true&_pageLabel=CoreServerServerTablePage' },
-    { name: 'R12_Financiera_Contable', url: 'http://ebsr12n1.domc001.cl:7006/console/console.portal?_nfpb=true&_pageLabel=CoreServerServerTablePage' }
+    { name: '', url: '' },
+    { name: '', url: '' },
+    { name: '', url: '' },
+    { name: '', url: '' },
+    { name: '', url: '' }
 ];
 
 const username = '';
