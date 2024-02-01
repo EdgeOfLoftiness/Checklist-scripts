@@ -11,8 +11,8 @@ const linksToVisit = [
     { name: 'R12_Financiera_Contable', url: 'http://ebsr12n1.domc001.cl:7006/console/console.portal?_nfpb=true&_pageLabel=CoreServerServerTablePage' }
 ];
 
-const username = 'operaciones';
-const password = 't6xDTZLN';
+const username = '';
+const password = '';
 
 async function ensureDirectoryExists(directory) {
     try {
