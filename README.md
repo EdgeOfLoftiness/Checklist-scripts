@@ -1,7 +1,5 @@
 # Automated Screenshot Tool
 
-![Screenshot](screenshot.png)
-
 ## Table of Contents
 
 - [Overview](#overview)
