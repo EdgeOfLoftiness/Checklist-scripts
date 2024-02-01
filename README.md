@@ -7,7 +7,6 @@
 - [Setup](#setup)
 - [Usage](#usage)
 - [Customization](#customization)
-- [Contribution](#contribution)
 
 ## Overview
 
