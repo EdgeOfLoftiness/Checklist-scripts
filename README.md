@@ -65,9 +65,3 @@ This script uses Puppeteer, a Node library for controlling headless browsers, to
     ```javascript
     const defaultImagesFolder = path.join(os.homedir(), 'Pictures');
     ```
-
-## Contribution
-
-Feel free to fork the repository, open issues, or submit pull requests for any improvements or additional features.
-
-**Happy Screenshotting!**
