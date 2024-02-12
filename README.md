@@ -1,4 +1,3 @@
-
 # Español
 #   Scripts de Automatización
 
@@ -34,7 +33,7 @@ run();`
 
 1.  **Clona este repositorio.**
 2.  **Instala Node.js y npm si aún no están instalados.**
-3.  **Instala dependencias utilizando `npm install`.**
+3.  **Instala dependencias como puppeteer utilizando `npm install`.**
 4.  **Actualiza variables de configuración como `username`, `password` y `linksToVisit` en los scripts.**
 5.  **Ejecuta un script utilizando `node script_name.js`.**
 
@@ -44,10 +43,29 @@ run();`
 
 La función `takeScreenshotWithLogin` captura una captura de pantalla después de iniciar sesión en una URL especificada. Personaliza la función ajustando los siguientes parámetros:
 
--   `url`: La URL objetivo para iniciar sesión y capturar una captura de pantalla.
--   `username`: Tu nombre de usuario.
--   `password`: Tu contraseña.
--   `outputName`: El nombre deseado para la captura de pantalla de salida.
+- `url`: La URL objetivo para iniciar sesión y capturar una captura de pantalla.
+Ajusta la URL según tu necesidad:
+
+``javascript
+const customUrl = 'tu_nueva_url';
+await page.goto(customUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });`` 
+
+-   `username`: Tu nombre de usuario. Ajusta el nombre de usuario según tu necesidad:
+
+`const customUsername = 'tu_nuevo_usuario';
+await page.waitForSelector('input#username');
+await page.type('input#username', customUsername);` 
+
+-   `password`: Tu contraseña. Ajusta la contraseña según tu necesidad:
+
+`const customPassword = 'tu_nueva_contraseña';
+await page.waitForSelector('input#password');
+await page.type('input#password', customPassword);` 
+
+-   `outputName`: El nombre deseado para la captura de pantalla de salida. Ajusta el nombre de salida según tu necesidad:
+
+``const customOutputName = 'tu_nuevo_nombre';
+const screenshotPath = path.join(fullOutputPath, '${customOutputName}.png'``
 
 Ajusta los tiempos de espera, los selectores y el manejo de errores según el comportamiento específico de tu aplicación.
 
@@ -65,39 +83,85 @@ Ejecuta el script usando `node script_name.js`. Sigue las indicaciones para eleg
 
 Siéntete libre de explorar y adaptar los scripts para tu caso de uso específico. Si encuentras problemas o tienes sugerencias, abre un problema o envía una solicitud de extracción.
 
-# English 
+
+# English
+
 # Automation Scripts
 
 This repository contains Node.js scripts for automating tasks in various systems. Each script is designed with a modular approach for easy readability and maintenance.
 
-## [](https://github.com/EdgeOfLoftiness/Checklist-scripts/tree/7d6b183f3e1c0766b5091f3b54203082af5949eb#scripts)Scripts
+## Scripts
 
--   **Oracle Script**:  [IOracle/oracle_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/7d6b183f3e1c0766b5091f3b54203082af5949eb/oracle_script.js)  - Automation tasks in Oracle.
--   **Enterprise Manager Script**:  [Enterprise_manager/enterprise_manager_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/7d6b183f3e1c0766b5091f3b54203082af5949eb/enterprise_manager_script.js)  - Automation tasks in Oracle Enterprise Manager.
--   **Zabbix Script**:  [Zabbix/zabbix_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/7d6b183f3e1c0766b5091f3b54203082af5949eb/zabbix_script.js)  - Automation tasks in Zabbix.
--   **Kibana Script**:  [Kibana/kibana_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/7d6b183f3e1c0766b5091f3b54203082af5949eb/kibana_script.js)  - Automation tasks in Kibana.
--   **Grafana Script**:  [Grafana/grafana_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/7d6b183f3e1c0766b5091f3b54203082af5949eb/grafana_script.js)  - Automation tasks in Grafana.
--   **Graylog Script**:  [Graylog/graylog_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/7d6b183f3e1c0766b5091f3b54203082af5949eb/graylog_script.js)  - Automation tasks in Graylog.
+-   **Oracle Script**: [Oracle/oracle_script.js](https://chat.openai.com/c/oracle_script.js) - Automation tasks in Oracle.
+-   **Enterprise Manager Script**: [Enterprise_manager/enterprise_manager_script.js](https://chat.openai.com/c/enterprise_manager_script.js) - Automation tasks in Oracle Enterprise Manager.
+-   **Zabbix Script**: [Zabbix/zabbix_script.js](https://chat.openai.com/c/zabbix_script.js) - Automation tasks in Zabbix.
+-   **Kibana Script**: [Kibana/kibana_script.js](https://chat.openai.com/c/kibana_script.js) - Automation tasks in Kibana.
+-   **Grafana Script**: [Grafana/grafana_script.js](https://chat.openai.com/c/grafana_script.js) - Automation tasks in Grafana.
+-   **Graylog Script**: [Graylog/graylog_script.js](https://chat.openai.com/c/graylog_script.js) - Automation tasks in Graylog.
 
-## [](https://github.com/EdgeOfLoftiness/Checklist-scripts/tree/7d6b183f3e1c0766b5091f3b54203082af5949eb#code-structure)Code Structure
+## Code Structure
 
-All scripts follow a consistent coding style. The core functionality is encapsulated in the  `takeScreenshotWithLogin`  function, which handles login and screenshot capture. The  `run`  function is user-friendly for script execution.
+All scripts follow a consistent coding style. The core functionality is encapsulated in the `takeScreenshotWithLogin` function, which handles login and screenshot capture. The `run` function is user-friendly for script execution.
 
-Example of the modified  `run`  function:
+Example of the modified `run` function:
 
-// Execute automation for all links without user input
+`// Execute automation for all links without user input
 async function run() {
     for (const link of linksToVisit) {
         await takeScreenshotWithLogin(link.url, username, password, link.name);
     }
 }
 
-run();
+run();` 
 
-## [](https://github.com/EdgeOfLoftiness/Checklist-scripts/tree/7d6b183f3e1c0766b5091f3b54203082af5949eb#getting-started)Getting Started
+## Getting Started
 
 1.  **Clone this repository.**
 2.  **Install Node.js and npm if not already installed.**
-3.  **Install dependencies using  `npm install`.**
-4.  **Update configuration variables such as  `username`,  `password`, and  `linksToVisit`  in the scripts.**
-5.  **Run a script using  `node script_name.js`.**
+3.  **Install dependencies using `npm install`.**
+4.  **Update configuration variables such as `username`, `password`, and `linksToVisit` in the scripts.**
+5.  **Run a script using `node script_name.js`.**
+
+## Code Structure
+
+### `takeScreenshotWithLogin` Function
+
+The `takeScreenshotWithLogin` function captures a screenshot after logging into a specified URL. Customize the function by adjusting the following parameters:
+
+-   `url`: The target URL to log in and capture a screenshot. Adjust the URL according to your needs:
+
+`const customUrl = 'your_new_url';
+await page.goto(customUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });` 
+
+-   `username`: Your login username. Adjust the username according to your needs:
+
+`const customUsername = 'your_new_username';
+await page.waitForSelector('input#username');
+await page.type('input#username', customUsername);` 
+
+-   `password`: Your login password. Adjust the password according to your needs:
+
+`const customPassword = 'your_new_password';
+await page.waitForSelector('input#password');
+await page.type('input#password', customPassword);` 
+
+-   `outputName`: The desired name for the output screenshot. Adjust the output name according to your needs:
+
+``const customOutputName = 'your_new_name';
+const screenshotPath = path.join(fullOutputPath, `${customOutputName}.png`);`` 
+
+Adjust the wait times, selectors, and error handling according to your specific application's behavior.
+
+### `run` Function
+
+The `run` function provides a user interface to choose and execute tasks. Personalize the function by modifying the `linkstovisit` array with your specific links.
+
+### User Input Handling
+
+Modify the prompt message and validation conditions in the `getUserInput` function to suit your preferences.
+
+### Execution
+
+Run the script using `node script_name.js`. Follow the prompts to choose a link or run all links.
+
+Feel free to explore and adapt the scripts for your specific use case. If you encounter issues or have suggestions, please open an issue or submit a pull request.
