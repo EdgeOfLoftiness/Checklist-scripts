@@ -18,6 +18,7 @@ All scripts follow a consistent coding style. The core functionality is encapsul
 Example of the modified `run` function:
 
 ```javascript
+
 // Execute automation for all links without user input
 async function run() {
     for (const link of linksToVisit) {
@@ -26,4 +27,12 @@ async function run() {
 }
 
 run();
+```
 
+## Getting Started
+
+1. **Clone this repository.**
+2. **Install Node.js and npm if not already installed.**
+3. **Install dependencies using `npm install`.**
+4. **Update configuration variables such as `username`, `password`, and `linksToVisit` in the scripts.**
+5. **Run a script using `node script_name.js`.**
