@@ -36,3 +36,30 @@ run();
 3. **Install dependencies using `npm install`.**
 4. **Update configuration variables such as `username`, `password`, and `linksToVisit` in the scripts.**
 5. **Run a script using `node script_name.js`.**
+
+## Code Structure
+
+### `takeScreenshotWithLogin` Function
+
+The `takeScreenshotWithLogin` function captures a screenshot after logging into a specified URL. Customize the function by adjusting the following parameters:
+
+- `url`: The target URL to log in and capture a screenshot.
+- `username`: Your login username.
+- `password`: Your login password.
+- `outputName`: The desired name for the output screenshot.
+
+Adjust the wait times, selectors, and error handling according to your specific application's behavior.
+
+### `run` Function
+
+The `run` function provides a user interface to choose and execute tasks. Personalize the function by modifying the `linkstovisit` array with your specific links.
+
+### User Input Handling
+
+Modify the prompt message and validation conditions in the `getUserInput` function to suit your preferences.
+
+### Execution
+
+Run the script using `node script_name.js`. Follow the prompts to choose a link or run all links.
+
+Feel free to explore and adapt the scripts for your specific use case. If you encounter issues or have suggestions, please open an issue or submit a pull request.
