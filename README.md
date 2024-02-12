@@ -88,8 +88,6 @@ Ejecuta el script usando
   ```
 Sigue las indicaciones para elegir un enlace o ejecutar todos los enlaces.
 
-Siéntete libre de explorar y adaptar los scripts para tu caso de uso específico. Si encuentras problemas o tienes sugerencias, abre un problema o envía una solicitud de extracción.
-
 
 # English
 
@@ -177,5 +175,3 @@ Run the script using
 node script_name.js
 ```
 Follow the prompts to choose a link or run all links.
-
-Feel free to explore and adapt the scripts for your specific use case. If you encounter issues or have suggestions, please open an issue or submit a pull request.
