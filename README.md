@@ -5,12 +5,12 @@ Este repositorio contiene scripts Node.js para automatizar tareas en varios sist
 
 ## Scripts
 
--   **Script de Oracle**: [Oracle/oracle_script.js](https://chat.openai.com/c/oracle_script.js) - Tareas de automatización en Oracle.
--   **Script de Enterprise Manager**: [Enterprise_manager/enterprise_manager_script.js](https://chat.openai.com/c/enterprise_manager_script.js) - Tareas de automatización en Oracle Enterprise Manager.
--   **Script de Zabbix**: [Zabbix/zabbix_script.js](https://chat.openai.com/c/zabbix_script.js) - Tareas de automatización en Zabbix.
--   **Script de Kibana**: [Kibana/kibana_script.js](https://chat.openai.com/c/kibana_script.js) - Tareas de automatización en Kibana.
--   **Script de Grafana**: [Grafana/grafana_script.js](https://chat.openai.com/c/grafana_script.js) - Tareas de automatización en Grafana.
--   **Script de Graylog**: [Graylog/graylog_script.js](https://chat.openai.com/c/graylog_script.js) - Tareas de automatización en Graylog.
+-   **Script de Oracle**: [oracle_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Oracle/puppeteertest.js) - Tareas de automatización en Oracle.
+-   **Script de Enterprise Manager**: [enterprise_manager_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Enterprise_Manager/enterprisetest.js) - Tareas de automatización en Oracle Enterprise Manager.
+-   **Script de Zabbix**: [zabbix_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Zabbix/zabbixtest.js) - Tareas de automatización en Zabbix.
+-   **Script de Kibana**: [kibana_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Kibana/kibanatest.js) - Tareas de automatización en Kibana.
+-   **Script de Grafana**: [grafana_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Grafana/grafanatest.js) - Tareas de automatización en Grafana.
+-   **Script de Graylog**: [graylog_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Graylog/graylogtest.js) - Tareas de automatización en Graylog.
 
 ## Estructura del Código
 
@@ -97,12 +97,12 @@ This repository contains Node.js scripts for automating tasks in various systems
 
 ## Scripts
 
--   **Oracle Script**: [Oracle/oracle_script.js](https://chat.openai.com/c/oracle_script.js) - Automation tasks in Oracle.
--   **Enterprise Manager Script**: [Enterprise_manager/enterprise_manager_script.js](https://chat.openai.com/c/enterprise_manager_script.js) - Automation tasks in Oracle Enterprise Manager.
--   **Zabbix Script**: [Zabbix/zabbix_script.js](https://chat.openai.com/c/zabbix_script.js) - Automation tasks in Zabbix.
--   **Kibana Script**: [Kibana/kibana_script.js](https://chat.openai.com/c/kibana_script.js) - Automation tasks in Kibana.
--   **Grafana Script**: [Grafana/grafana_script.js](https://chat.openai.com/c/grafana_script.js) - Automation tasks in Grafana.
--   **Graylog Script**: [Graylog/graylog_script.js](https://chat.openai.com/c/graylog_script.js) - Automation tasks in Graylog.
+-   **Oracle Script**: [oracle_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Oracle/puppeteertest.js) - Automation tasks in Oracle.
+-   **Enterprise Manager Script**: [Enterprise_manager/enterprise_manager_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Enterprise_Manager/enterprisetest.js) - Automation tasks in Oracle Enterprise Manager.
+-   **Zabbix Script**: [zabbix_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Zabbix/zabbixtest.js) - Automation tasks in Zabbix.
+-   **Kibana Script**: [kibana_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Kibana/kibanatest.js) - Automation tasks in Kibana.
+-   **Grafana Script**: [grafana_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Grafana/grafanatest.js) - Automation tasks in Grafana.
+-   **Graylog Script**: [graylog_script.js](https://github.com/EdgeOfLoftiness/Checklist-scripts/blob/main/Graylog/graylogtest.js) - Automation tasks in Graylog.
 
 ## Code Structure
 
