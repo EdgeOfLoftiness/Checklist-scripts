@@ -18,16 +18,15 @@ Todos los scripts siguen un estilo de codificación consistente. La funcionalida
 
 Ejemplo de la función `run` modificada:
 
-javascriptCopy code
-
-`// Ejecutar automatización para todos los enlaces sin intervención del usuario
+```console
 async function run() {
     for (const link of linksToVisit) {
         await takeScreenshotWithLogin(link.url, username, password, link.name);
     }
 }
 
-run();` 
+run();
+```
 
 ## Inicio Rápido
 
@@ -43,29 +42,33 @@ run();`
 
 La función `takeScreenshotWithLogin` captura una captura de pantalla después de iniciar sesión en una URL especificada. Personaliza la función ajustando los siguientes parámetros:
 
-- `url`: La URL objetivo para iniciar sesión y capturar una captura de pantalla.
+- `url`:
 Ajusta la URL según tu necesidad:
 
-``javascript
-const customUrl = 'tu_nueva_url';
-await page.goto(customUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });`` 
+```console
+const customUrl = '';
+```
 
--   `username`: Tu nombre de usuario. Ajusta el nombre de usuario según tu necesidad:
+-   `username`:
+ Ajusta el nombre de usuario según tu necesidad:
 
-`const customUsername = 'tu_nuevo_usuario';
-await page.waitForSelector('input#username');
-await page.type('input#username', customUsername);` 
+```console
+const customUsername = '';
+```
 
--   `password`: Tu contraseña. Ajusta la contraseña según tu necesidad:
+-   `password`: 
+Tu contraseña. Ajusta la contraseña según tu necesidad:
 
-`const customPassword = 'tu_nueva_contraseña';
-await page.waitForSelector('input#password');
-await page.type('input#password', customPassword);` 
+```console
+const customPassword = '';
+```
 
--   `outputName`: El nombre deseado para la captura de pantalla de salida. Ajusta el nombre de salida según tu necesidad:
+-   `outputName`:
+Ajusta el nombre de salida según tu necesidad:
 
-``const customOutputName = 'tu_nuevo_nombre';
-const screenshotPath = path.join(fullOutputPath, '${customOutputName}.png'``
+```console
+const customOutputName = '';
+```
 
 Ajusta los tiempos de espera, los selectores y el manejo de errores según el comportamiento específico de tu aplicación.
 
@@ -79,7 +82,11 @@ Modifica el mensaje de solicitud y las condiciones de validación en la función
 
 ### Ejecución
 
-Ejecuta el script usando `node script_name.js`. Sigue las indicaciones para elegir un enlace o ejecutar todos los enlaces.
+Ejecuta el script usando
+ ```console
+  node script_name.js
+  ```
+Sigue las indicaciones para elegir un enlace o ejecutar todos los enlaces.
 
 Siéntete libre de explorar y adaptar los scripts para tu caso de uso específico. Si encuentras problemas o tienes sugerencias, abre un problema o envía una solicitud de extracción.
 
@@ -105,14 +112,15 @@ All scripts follow a consistent coding style. The core functionality is encapsul
 
 Example of the modified `run` function:
 
-`// Execute automation for all links without user input
+```console
 async function run() {
     for (const link of linksToVisit) {
         await takeScreenshotWithLogin(link.url, username, password, link.name);
     }
 }
 
-run();` 
+run();
+```
 
 ## Getting Started
 
@@ -128,27 +136,29 @@ run();`
 
 The `takeScreenshotWithLogin` function captures a screenshot after logging into a specified URL. Customize the function by adjusting the following parameters:
 
--   `url`: The target URL to log in and capture a screenshot. Adjust the URL according to your needs:
+-   `url`:Adjust the URL according to your needs:
 
-`const customUrl = 'your_new_url';
-await page.goto(customUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });` 
+```console
+const customUrl = '';
+``` 
 
--   `username`: Your login username. Adjust the username according to your needs:
+-   `username`: Adjust the username according to your needs:
 
-`const customUsername = 'your_new_username';
-await page.waitForSelector('input#username');
-await page.type('input#username', customUsername);` 
+```console
+const customUsername = '';
+``` 
 
--   `password`: Your login password. Adjust the password according to your needs:
+-   `password`: Adjust the password according to your needs:
 
-`const customPassword = 'your_new_password';
-await page.waitForSelector('input#password');
-await page.type('input#password', customPassword);` 
+```console 
+const customPassword = '';
+```
 
--   `outputName`: The desired name for the output screenshot. Adjust the output name according to your needs:
+-   `outputName`: Adjust the output name according to your needs:
 
-``const customOutputName = 'your_new_name';
-const screenshotPath = path.join(fullOutputPath, `${customOutputName}.png`);`` 
+```console
+const customOutputName = '';
+``` 
 
 Adjust the wait times, selectors, and error handling according to your specific application's behavior.
 
@@ -162,6 +172,10 @@ Modify the prompt message and validation conditions in the `getUserInput` functi
 
 ### Execution
 
-Run the script using `node script_name.js`. Follow the prompts to choose a link or run all links.
+Run the script using 
+```console 
+node script_name.js
+```
+Follow the prompts to choose a link or run all links.
 
 Feel free to explore and adapt the scripts for your specific use case. If you encounter issues or have suggestions, please open an issue or submit a pull request.
